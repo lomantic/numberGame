@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Number Game</title>
+  <script src='game.js'></script>
+
+</head>
+
+<body>
+  <h1>Number Game </h1>
+  <p>Time : <label id="minutes">00</label>:<label id="seconds">00</label></p>
+  <p id="numbers"> </p>
+
+  <!--  not proper
+  <form oninput="typedNumber.value=parseInt(userNumber.value)">
+
+    <input type="number" id="userNumber" value="0">
+    <br>
+    <output name="typedNumber" for="userNumber"></output>
+  </form>
+-->
+
+  <form action="gameOver.html">
+    <label>Type number : </label>
+    <input type="number" id="typeNumber" value="0">
+    <input type="button" id="checkNum" value="type next number" onclick="checkNumber()">
+    <br><br>
+    <p id="alignedNumbers">Aligned Numbers : </p>
+    <input type="button" value="undo" onclick="undo()">
+    <br>
+    <input type="submit" value="submit" onclick="answerCheck()">
+  </form>
+  <br>
+  <button type="reset" value="reset" onclick="reset()">Restart</button>
+
+  <script>
+    var minutesLabel = document.getElementById("minutes");
+    var secondsLabel = document.getElementById("seconds");
+    var totalSeconds = 0;
+    setInterval(setTime, 1000);
+    printGame();
+    emptyArray(userOrder);
+    //  emptyArray(selectedNumbers);
+    var input = document.getElementById("typeNumber");
+    input.addEventListener("keydown", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("checkNum").click();
+      }
+
+    });
+
+  </script>
+
+</body>
+
+
+
+</html>

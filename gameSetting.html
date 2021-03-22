@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game Setting</title>
+  <script src='settings.js'></script>
+
+</head>
+
+<body>
+  <h1>Game Setting </h1>
+
+
+  <form action="numberGame.html">
+    <label for="chooseLevel">Choose level:</label>
+    <select name="level" id="chooseLevel">
+      <option value="lv1">LV1</option>
+      <option value="lv2">LV2</option>
+      <option value="lv3">LV3</option>
+    </select>
+    <br><br>
+
+    <p>Select order:</p>
+    <input type="radio" id="order1" name="order" value="ascend" checked>
+    <label for="order1">Ascend</label><br>
+    <input type="radio" id="order2" name="order" value="descend">
+    <label for="order2">Descend</label><br>
+
+
+    <button onclick="storeSetting()">Start</button>
+  </form>
+
+
+
+</body>
+
+</html>
