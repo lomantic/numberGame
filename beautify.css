@@ -1,0 +1,97 @@
+h1 {
+  color: blue;
+  text-align: left;
+  font-size: 8vmax;
+  border-bottom: 1vmax solid blue;
+  padding: 20px;
+  margin: 0px;
+}
+
+p{
+  font-family:   sans-serif,Arial,Helvetica;
+  font-size: 3.5vmax;
+  padding-left : 1vmax;
+}
+label{
+  font-family:   sans-serif,Arial,Helvetica;
+  font-size: 3.5vmax;
+  padding-left : 1vmax;
+}
+
+#winner{
+  color:red;
+  border-bottom: none;
+
+}
+#instruction li {
+  margin-bottom: 2vmax;
+}
+
+ol {
+  font-size: 3.5vmax;
+  padding-left : 5vmax;
+}
+
+input[type=image] {
+  width: 25vmax;
+}
+
+input[type=image]:hover {
+  margin-top: 0.1vmax;
+}
+input[type=radio]{
+  width : 2vmax;
+  height : 2vmax;
+
+}
+button{
+  width: 25vmax;
+  height: 5.5vmax;
+  margin-top: 1.5vmax;
+  margin-bottom: 1.5vmax;
+  font-size:3.5vmax;
+  font-weight: bold;
+}
+input[type=button]{
+  width: 25vmax;
+  height: 5.5vmax;
+  margin-top: 1.5vmax;
+  margin-bottom: 1.5vmax;
+  font-size:3.5vmax;
+  font-weight: bold;
+}
+
+#checkNum{
+
+  width: 20vmax;
+  height: 4vmax;
+  margin-left: 1.5vmax;
+  font-size:2vmax;
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+input[type=submit]{
+  width: 25vmax;
+  height: 5.5vmax;
+  margin-top: 1.5vmax;
+  margin-bottom: 1.5vmax;
+  font-size:3.5vmax;
+  font-weight: bold;
+}
+input[type=number]{
+  width: 15vmax;
+  height: 4vmax;
+  margin-top: 1.5vmax;
+  margin-bottom: 1.5vmax;
+  font-size:3.5vmax;
+  text-align: right;
+
+}
+
+select{
+  width: 10vmax;
+  height: 3.5vmax;
+  margin-left: 1vmax;
+  font-size:2vmax;
+}
